@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learn About Roundworms - Fun & Facts!</title>
+  <style>
+    body {
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background-color: #ffebee; /* Light pink background */
+      color: #4caf50; /* Vibrant green text */
+      margin: 0;
+      padding: 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    header {
+      background-color: #ff4081; /* Bright pink header */
+      color: white;
+      padding: 30px;
+      text-align: center;
+      border-bottom: 5px solid #388e3c;
+      font-size: 2.5rem;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 30px;
+      background-color: #ffffff;
+      border-radius: 15px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    h2, h3 {
+      color: #ec407a; /* Bright pink headings */
+    }
+
+    .roundworm-img {
+      width: 100%;
+      max-width: 350px;
+      display: block;
+      margin: 20px auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .fun-fact {
+      background-color: #c8e6c9; /* Light green background */
+      border-left: 5px solid #388e3c;
+      padding: 15px;
+      margin-top: 25px;
+      font-style: italic;
+      font-size: 1.1rem;
+    }
+
+    .bubble-button {
+      background-color: #4caf50;
+      color: white;
+      padding: 12px 24px;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      text-align: center;
+      display: inline-block;
+      margin-top: 20px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s ease;
+    }
+
+    .bubble-button:hover {
+      background-color: #388e3c;
+    }
+
+    .footer {
+      background-color: #ff4081;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    .highlight {
+      color: #f44336;
+      font-weight: bold;
+    }
+
+    .list-item {
+      font-size: 1.1rem;
+      margin: 10px 0;
+    }
+
+    /* Animation for roundworm */
+    @keyframes moveWorm {
+      0% {
+        transform: translate(0, 0);
+      }
+      25% {
+        transform: translate(100px, 50px);
+      }
+      50% {
+        transform: translate(200px, 0);
+      }
+      75% {
+        transform: translate(100px, -50px);
+      }
+      100% {
+        transform: translate(0, 0);
+      }
+    }
+
+    .roundworm-animation {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 40px;
+      height: 40px;
+      background-color: #4caf50;
+      border-radius: 50%;
+      animation: moveWorm 5s infinite;
+    }
+
+    /* Gallery section */
+    h1 {
+      color: #34a853;
+      font-size: 3rem;
+      margin-bottom: 30px;
+      text-shadow: 2px 2px #ff69b4;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 50%;
+      border: 6px dashed #ff69b4;
+      transition: filter 0.3s ease;
+      animation: idleWiggle 4s ease-in-out infinite;
+    }
+
+    .gallery img:hover {
+      animation: wiggle 0.5s infinite;
+      filter: brightness(110%);
+      border-color: #34a853;
+    }
+
+    @keyframes wiggle {
+      0%   { transform: rotate(0deg); }
+      25%  { transform: rotate(2deg); }
+      50%  { transform: rotate(-2deg); }
+      75%  { transform: rotate(2deg); }
+      100% { transform: rotate(0deg); }
+    }
+
+    @keyframes idleWiggle {
+      0%   { transform: rotate(0deg); }
+      50%  { transform: rotate(1deg); }
+      100% { transform: rotate(0deg); }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    Roundworm Fun Facts 🐛
+  </header>
+
+  <div class="container">
+    <h2>What Are Roundworms?</h2>
+    <p>Roundworms are squiggly little creatures that can live inside your body and cause all sorts of fun (and sometimes not-so-fun) things to happen! They’re tiny, but oh boy, they sure can be interesting to learn about—especially for nurses and healthcare pros!</p>
+
+    <img class="roundworm-img" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.ClATpl_bnGkNOaOdTnQGCwHaE8%26pid%3DApi&f=1&ipt=91a60195405a4195709c208940f803d2dbe657bd4c9ea234c6f9aadafe3b08ae&ipo=images" alt="Roundworm Image">
+    
+    <div class="fun-fact">
+      <p><strong>Did you know?</strong> Roundworms can grow up to 10 - 31 cm long! That's like a ruler long! 😱</p>
+    </div>
+
+    <h3>How Do Roundworms Affect Humans?</h3>
+    <p>Roundworms love to live in your intestines, and they can cause some problems if left untreated! Here are a few common symptoms:</p>
+    <ul>
+      <li class="list-item">Stomach cramps or bloating.</li>
+      <li class="list-item">Unexplained fatigue (you just can't shake it off!).</li>
+      <li class="list-item">A persistent cough (especially with Ascaris infections).</li>
+      <li class="list-item">And sometimes, they even cause a fun little thing called <span class="highlight">intestinal blockage</span>—not so fun, though!</li>
+    </ul>
+
+    <h3>How to Keep Roundworms Away! 🦠</h3>
+    <p>Roundworms may seem scary, but with a few simple steps, you can keep them at bay:</p>
+    <ul>
+      <li class="list-item">Wash your hands like a pro, especially before eating or preparing food.</li>
+      <li class="list-item">Avoid drinking contaminated water (yikes! No one wants that!).</li>
+      <li class="list-item">Cook food thoroughly and don’t eat raw meat that could be contaminated (hello, hygiene!).</li>
+      <li class="list-item">Keep your living spaces clean—roundworms hate cleanliness!</li>
+    </ul>
+
+    <h3>Fun Fact Time! 🎉</h3>
+    <p>Roundworms are so diverse that they live in EVERY habitat imaginable, from deep in the ocean to the tops of mountains. Some even live in plants! And get this—<span class="highlight">some roundworms are bioluminescent</span> (meaning they can glow in the dark!). 🌟</p>
+
+    <button class="bubble-button" onclick="window.open('https://youtu.be/hm9olv4tJFk?si=WPrbi76-GaopmKGN')">Learn More Fun Facts!</button>
+  </div>
+
+  <h1>My Facebook Worms Gallery</h1>
+  <div class="gallery">
+    <a href="https://www.facebook.com/photo/?fbid=151773644553924&set=a.132436170173338" target="_blank">
+      <img src="https://scontent.fmnl16-1.fna.fbcdn.net/v/t39.30808-1/351110294_151773644553924_2882956576233497617_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=105&ccb=1-7&_nc_sid=e99d92&_nc_eui2=AeER-HqGHLKNIg4zAwfpquMRe6CF5txBrPJ7oIXm3EGs8l0Udixf1-ic21e2gpgn1P52UpRfHlqFcxUfP-CgAA0Z&_nc_ohc=xFqRsSnuA-YQ7kNvwEY8ZzD&_nc_oc=Adk7gvaXU8GSO2NCwxna0d9Y5vVgwnLzW4ewPNu5XL8WpgFqPLh40BJwQJ43XksD2KQ&_nc_zt=24&_nc_ht=scontent.fmnl16-1.fna&_nc_gid=by-yIF_0P_auoDa8lKgt1Q&oh=00_AfH2iA3jDS8-baUJitpd_W6IGWMCJaVJPyFMtTd-oYRxuQ&oe=67FAE7DC" alt="Photo 1">
+    </a>
+    <a href="https://www.facebook.com/photo/?fbid=1360133541287868&set=a.132436170173338" target="_blank">
+      <img src="https://scontent.fmnl16-1.fna.fbcdn.net/v/t39.30808-1/440888250_1360133541287868_6539841880054035921_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=101&ccb=1-7&_nc_sid=e99d92&_nc_eui2=AeGSbdxw8DWCGWSujut7cO18wlhaj0XXUF3CWFqPRddQXa8Ll-7TsBat_3YX8DH-tjTZCPMzyTNfXgO50IyovDGZ&_nc_ohc=F7pA7hcQfsIQ7kNvwHXyTjo&_nc_oc=AdluFQkmjv_cHD5CnHCtRxEYScplc9wo4ZW0QqbPG4F52HUxpphw7OzmoYMvNtGcXMw&_nc_zt=24&_nc_ht=scontent.fmnl16-1.fna&_nc_gid=W1dzV4YUl1ySrDVW2xdrWg&oh=00_AfGmsARpvf5cAE2vtcDqKaJuLyS1gCRg_YQK_Ap7kkTSSA&oe=67FAED60" alt="Photo 2">
+    </a>
+    <a href="https://www.facebook.com/photo/?fbid=1377614043258590&set=a.132436170173338" target="_blank">
+      <img src="https://scontent.fmnl16-1.fna.fbcdn.net/v/t39.30808-1/480551855_1377614043258590_5918598905875331686_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=105&ccb=1-7&_nc_sid=e99d92&_nc_eui2=AeH4FL6CvTtw34dr74HNVxjsAAPppiQZJfoAA-mmJBkl-nEGqWdCRvh1jC-VYFbSFe1L9ym2oDgARJG9j_7cWUYZ&_nc_ohc=0mUhKd74tygQ7kNvwHcizFu&_nc_oc=AdlY61w795djwTkRI0sez1BUCImwV4VfkTMRrYCfvGjSzEQBKfGeyIGDBmfZw8XhPlM&_nc_zt=24&_nc_ht=scontent.fmnl16-1.fna&_nc_gid=jX50c60V-hr4bKH9dB_8hg&oh=00_AfFr-8epyXdLbiE7c6UCGtm4A7tG74RE951CJSeFJB1AXA&oe=67FAC415" alt="Photo 3">
+    </a>
+  </div>
+
+  <div class="footer">
+    Keep learning and stay curious—Roundworms might be tiny, but your knowledge is HUGE! 🧠💚
+  </div>
+
+  <!-- Animated Roundworm -->
+  <div class="roundworm-animation"></div>
+
+</body>
+</html>
