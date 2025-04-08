@@ -187,3 +187,96 @@
 
   <div class="footer">
     Keep learning and stay curious—Roundworms might be tiny
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multiple Moving Worms</title>
+  <style>
+    body {
+      background-color: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      overflow: hidden; /* Prevents scrolling when worms move */
+    }
+
+    .worm {
+      width: 50px;
+      height: 50px;
+      background-color: #4caf50; /* Green color for the worm */
+      border-radius: 50%;
+      position: absolute;
+      animation: moveWorm 5s linear infinite;
+    }
+
+    /* Animations for each worm, making them move differently */
+    @keyframes moveWorm {
+      0% {
+        left: -60px; /* Start off-screen */
+        top: 0;
+        transform: rotate(0deg);
+      }
+      25% {
+        left: 30%;
+        top: 20px;
+        transform: rotate(45deg);
+      }
+      50% {
+        left: 50%;
+        top: 50px;
+        transform: rotate(90deg);
+      }
+      75% {
+        left: 70%;
+        top: 20px;
+        transform: rotate(135deg);
+      }
+      100% {
+        left: 100%;
+        top: 0;
+        transform: rotate(180deg);
+      }
+    }
+
+    /* Create multiple worms with randomized timing and starting positions */
+    .worm:nth-child(1) {
+      animation-duration: 6s;
+      animation-delay: 0s;
+    }
+    .worm:nth-child(2) {
+      animation-duration: 5s;
+      animation-delay: 1s;
+      background-color: #ff7043; /* Different color */
+    }
+    .worm:nth-child(3) {
+      animation-duration: 7s;
+      animation-delay: 2s;
+      background-color: #42a5f5; /* Different color */
+    }
+    .worm:nth-child(4) {
+      animation-duration: 4s;
+      animation-delay: 3s;
+      background-color: #ffeb3b; /* Different color */
+    }
+    .worm:nth-child(5) {
+      animation-duration: 6.5s;
+      animation-delay: 1.5s;
+      background-color: #ab47bc; /* Different color */
+    }
+  </style>
+</head>
+<body>
+
+  <div class="worm"></div>
+  <div class="worm"></div>
+  <div class="worm"></div>
+  <div class="worm"></div>
+  <div class="worm"></div>
+
+</body>
+</html>
